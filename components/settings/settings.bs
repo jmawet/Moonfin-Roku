@@ -706,13 +706,7 @@ function getHomeSectionOrder() as object
 end function
 
 function normalizeHomeRowsSourceName(sourceValue as dynamic) as string
-    source = LCase(dynamicToDisplayString(sourceValue))
-
-    if isStringEqual(source, "kefin") or isStringEqual(source, "kefintweak") or isStringEqual(source, "kefintweaks")
-        return "kefintweaks"
-    end if
-
-    return source
+    return LCase(dynamicToDisplayString(sourceValue))
 end function
 
 
@@ -1949,7 +1943,7 @@ function reorderSettingsForFlutter(configTree as object) as object
     moonfinMappedTitles = ["Navigation Bar", "Home Screen", "Featured Media Bar", "Theme Music", "Shuffle", "Visual Effects", "Support Moonfin"]
     pushUnmappedChildrenByTitle(additionalChildren, moonfinSettings, moonfinMappedTitles)
 
-    pluginMappedTitles = ["Enable Plugin", "Settings Sync", "Home Screen Sections", "KefinTweaks", "MDBList Ratings", "TMDB", "Seerr", "Jellyseerr"]
+    pluginMappedTitles = ["Enable Plugin", "Settings Sync", "MDBList Ratings", "TMDB", "Seerr", "Jellyseerr"]
     pushUnmappedChildrenByTitle(additionalChildren, pluginRootSection, pluginMappedTitles)
 
     userInterfaceMappedTitles = ["Colors", "General", "Home Rows"]
