@@ -215,8 +215,9 @@ We welcome contributions to Moonfin for Roku!
 
 ## Translating
 
-Translations are maintained through the Jellyfin Weblate instance:
+Translations are maintained through the Jellyfin and Moonfin Weblate instances:
 - [Jellyfin Roku on Weblate](https://translate.jellyfin.org/projects/jellyfin/jellyfin-roku)
+- [Moonfin on Weblate](https://translate.moonfin.io/)
 
 Translations contributed to Moonfin that are universally applicable will be submitted upstream to benefit the entire community.
 
